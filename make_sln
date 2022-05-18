@@ -1,4 +1,4 @@
-echo "Insert project Name: (Default: Unnamed project)"
+echo "Insert project Name: (Default: UnnamedProject)"
 version=5.0
 for i in $(ls /usr/local/share/dotnet/sdk/)
  do 
@@ -9,7 +9,7 @@ for i in $(ls /usr/local/share/dotnet/sdk/)
 done
 echo "Version Selected: "$version
 read proj_name
-proj_name="${proj_name:=Unnamed project}"
+proj_name="${proj_name:=UnnamedProject}"
 echo "Project named "$proj_name
 echo "Choose a template (Default: classlib)"
 read template
